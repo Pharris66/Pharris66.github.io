@@ -31,7 +31,15 @@
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-
+  
+  <style>
+  /* Prevent decorative hero SVG overlays from blocking clicks */
+  .f-w-44.position-absolute,
+  .f-w-36.position-absolute,
+  .f-w-20.position-absolute {
+    pointer-events: none !important;
+  }
+</style>
   <!-- Fix for custom scrollbar if JS is disabled-->
   <noscript>
     <style>
@@ -413,7 +421,7 @@
                     <div class="swiper-slide" data-aos="reveal-left">
                       <p class="lead">"I specialize in building interactive dashboards, performing SQL-driven analysis, and uncovering insights that help drive better decisions."</p>
                       <p class="mt-5 fw-bold mb-2 fs-5">Patrick Harris</p>
-                      <span class="text-muted">Data Analyst</p>
+                      <span class="text-muted">Data Analyst</span>
                     </div>
               </div>
             
